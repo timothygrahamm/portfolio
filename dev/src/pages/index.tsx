@@ -1,15 +1,20 @@
 import * as React from "react"
-import type { HeadFC, PageProps } from "gatsby"
+import { Link, type HeadFC, type PageProps } from "gatsby"
+import seocat from "../images/seocat.png";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <main className="flex h-screen">
-      <div className="m-auto">
-        <div className="bg-red-500 rounded-xl">
+    <main className="flex h-screen bg-sc-beige font-semibold text-4xl">
+      <div className="m-auto w-1/3">
+        <div className="rounded-3xl bg-white p-6">
           <div>
-            <div className="text-xl font-large text-black">Seocat</div>
-            <p className="text-xl text-slate-500">Gyats and services</p>
+            <img className="mx-auto mt-6" src={seocat}></img>
+            <p className="text-center m-3">coming soon!</p>
+            <p className="text-center m-3">portfolio, shop and more!</p>
           </div>  
+        </div>
+        <div className="rounded-3xl bg-white mt-6 p-6">
+          <p className="text-center m-3">follow me on <a href="https://www.instagram.com/_seocat/">instagram</a> for updates! </p> 
         </div>
       </div>
     </main>
